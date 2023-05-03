@@ -150,6 +150,7 @@ nav a {
   align-items: center;
 }
 #Carousel .slide .banner-img img {
+  width: 35%;
   position: absolute;
   bottom: 0;
   right: auto;
@@ -157,14 +158,393 @@ nav a {
   filter: drop-shadow(-70px 20px 40px rgba(0, 0, 0, 0.24));
   box-shadow: none;
 }
-#Carousel button {
+#Carousel .slide .banner-text {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Carousel .slide .banner-text .banner-header h1 {
+  font-family: CocoBold, Arial;
+  font-weight: 800;
+  font-size: 34px;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: normal;
+  width: 80%;
+}
+#Carousel .slide .banner-text .banner-header span {
+  width: 80%;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 40px;
+  line-height: 25px;
+  font-family: Arial;
+}
+#Carousel .slide .info-button {
+  position: absolute;
+  bottom: 100px;
+}
+#Carousel .slide .info-button a {
+  color: white;
+  border: 1px solid white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+#Statics .statics {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+#Statics .statics .statics-box {
+  padding: 40px 55px;
+  text-align: center;
+  background: #FAFAFA;
+  border-radius: 10px;
+}
+#Statics .statics .statics-box .statics-caption {
+  line-height: 18px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 800;
+  font-family: CocoSharp;
+}
+#Statics .statics .statics-box .statics-value {
+  font-size: 52px;
+  line-height: normal;
+  color: #FF6400;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+#Statics .statics .statics-box .statics-text {
+  line-height: 14px;
+  font-weight: 400;
+  color: #000;
+  margin-top: -20px;
+  margin-bottom: 45px;
+  font-size: 14px;
+}
+#Statics .statics .statics-box .statics-button {
+  background: #FF6400;
+  border-radius: 25px;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+}
+#Statics .statics .statics-box .statics-button a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#UCard {
+  padding: 35px 0 0;
+  position: relative;
+}
+#UCard .ucard-bar {
+  background: #fafafa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+#UCard .ucard-bar .card-img {
+  width: 45%;
+  height: 400px;
+  position: relative;
+}
+#UCard .ucard-bar .card-img img {
+  height: 495px;
+  position: absolute;
+  top: -95px;
+  right: 0;
+}
+#UCard .ucard-bar .card-description {
+  width: 50%;
+  padding-right: 20px;
+  padding-left: 70px;
+}
+#UCard .ucard-bar .card-description .ucard-heading h2 {
+  font-family: CocoSharp, Arial;
+  font-weight: 800;
+  font-size: 28px;
+  color: #FF6400;
+  margin: 0 0 20px;
+}
+#UCard .ucard-bar .card-description .ucard-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 40px;
+}
+#UCard .ucard-bar .card-description .ucard-buttons .tr-btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #969696 !important;
+  background: 0 0 !important;
+  box-shadow: none !important;
+  padding: 16px 30px;
+}
+#UCard .ucard-bar .card-description .ucard-buttons a {
+  font-weight: bold;
+  color: white;
+  background-color: #FF6400;
+  padding: 16px 25px;
+  border-radius: 26px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+#AppBar {
+  padding: 35px 0 0;
+  position: relative;
+}
+#AppBar .app-bar {
+  background: #fafafa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+#AppBar .app-bar .appbar-text {
+  width: 50%;
+  padding-right: 20px;
+  padding-left: 70px;
+}
+#AppBar .app-bar .appbar-text .appbar-heading h1 {
+  line-height: 28px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: #FF6400;
+  margin: 0 0 20px;
+}
+#AppBar .app-bar .appbar-text .appbar-description {
+  margin-bottom: 40px;
+}
+#AppBar .app-bar .appbar-text .appbar-description span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+#AppBar .app-bar .appbar-text .appbar-svg svg {
+  margin-right: 8px;
+  width: 135px;
+  height: 40px;
+}
+#AppBar .app-bar .appbar-text .appbar-button {
+  margin-top: 30px;
+}
+#AppBar .app-bar .appbar-text .appbar-button a {
+  background-color: #FF6400;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 12px;
+  border-radius: 25px;
+  font-weight: 700;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+#AppBar .app-bar .appbar-img {
+  width: 45%;
+  height: 400px;
+  position: relative;
+}
+#AppBar .app-bar .appbar-img img {
+  height: 495px;
+  position: absolute;
+  top: -95px;
+  right: 0;
+}
+
+#Exchange {
+  padding: 30px 0;
+}
+#Exchange .exchange {
+  overflow: hidden;
+  padding: 40px 70px;
+  background: #fafafa;
+  border-radius: 10px;
+}
+#Exchange .exchange .exc-heading {
+  font-weight: 800;
+  font-size: 28px;
+  color: #FF6400;
+  margin: 0 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#Exchange .exchange .exc-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+#Exchange .exchange .exc-boxes .exc-box {
+  position: relative;
+  min-height: 1px;
+  padding: 50px 62px;
+}
+#Exchange .exchange .exc-boxes .exc-box .exc-header {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  padding-bottom: 10px;
+}
+#Exchange .exchange .exc-boxes .exc-box .exc-date {
+  font-size: 12px;
+  color: rgba(50, 50, 50, 0.5);
+  margin-bottom: 30px;
+}
+#Exchange .exchange .exc-boxes .exc-box .exc-table table,
+#Exchange .exchange .exc-boxes .exc-box .exc-table thead,
+#Exchange .exchange .exc-boxes .exc-box .exc-table tr,
+#Exchange .exchange .exc-boxes .exc-box .exc-table th {
+  border-bottom: 1px solid #D6D9DB;
+  padding-bottom: 13px;
+  width: 33%;
+  font-size: 12px;
+  font-weight: 400 !important;
+}
+#Exchange .exchange .exc-boxes .exc-box .exc-table table,
+#Exchange .exchange .exc-boxes .exc-box .exc-table tbody,
+#Exchange .exchange .exc-boxes .exc-box .exc-table tr,
+#Exchange .exchange .exc-boxes .exc-box .exc-table td {
+  width: 33.3333333%;
+  padding: 15px 20px;
+  white-space: nowrap;
+  color: #323232;
+  font-weight: 700;
+}
+
+#News .all-news {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#News .all-news a {
+  background-color: #FF6400;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 12px;
+  border-radius: 25px;
+  font-weight: 700;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+#News .news {
+  display: flex;
+  gap: 20px;
+  line-height: 24px;
+  justify-content: baseline;
+}
+#News .news .news-box {
+  background-color: #FAFAFA;
+  padding: 20px 20px;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+#News .news .news-box:hover {
+  background-color: #FF6400;
+}
+#News .news .news-box:hover .news-heading h4 {
+  color: white;
+}
+#News .news .news-box:hover .news-text p {
+  color: white;
+}
+#News .news .news-box:hover .news-date p {
+  color: white;
+}
+#News .news .news-box .news-heading h4 {
+  color: #FF6400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  width: 340px;
+}
+#News .news .news-box .news-text {
+  padding-top: 8px;
+}
+#News .news .news-box .news-text p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  width: 340px;
+  font-weight: lighter;
+}
+#News .news .news-box .news-date {
+  padding-top: 1px;
+}
+#News .news .news-box .news-date p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(50, 50, 50, 0.5);
+  margin-top: 15px;
+}
+
+#Network {
+  margin-bottom: 70px;
+}
+#Network .network-location {
+  display: flex;
+  justify-content: space-between;
+}
+#Network .network-location .net-left {
+  display: flex;
+  justify-content: end;
+  background-color: #FAFAFA;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+#Network .network-location .net-left .net-text p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 400px;
+}
+#Network .network-location .net-left .net-button a {
+  background-color: #FF6400;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 12px;
+  border-radius: 25px;
+  font-weight: 700;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+#Network .net-right {
+  border-radius: 10px;
+  padding: 30px 50px;
+  background-color: #FAFAFA;
+}
+#Network .net-right .net-button a {
+  background-color: #FF6400;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 12px;
+  border-radius: 25px;
+  font-weight: 700;
+  padding: 15px 45px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  display: inline-block;
+}
+
+button {
   background: none;
   border: none;
 }
-#Carousel button .fas {
+
+button .fas {
   color: rgba(255, 255, 255, 0.5);
 }
-#Carousel .btn-slide {
+
+.btn-slide {
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -172,21 +552,25 @@ nav a {
   width: 5.5rem;
   cursor: pointer;
 }
-#Carousel .prev {
+
+.prev {
   left: 3rem;
   transform: translate(-50%, -50%);
 }
-#Carousel .next {
+
+.next {
   right: 3rem;
   transform: translate(50%, -50%);
 }
-#Carousel .dots-container {
+
+.dots-container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-#Carousel .dot {
+
+.dot {
   width: 7px;
   height: 7px;
   margin: 15px 10px;
@@ -194,7 +578,8 @@ nav a {
   background: rgba(39, 39, 39, 0.5);
   cursor: pointer;
 }
-#Carousel .dot.active {
+
+.dot.active {
   background: #FF6400;
 }
 
@@ -321,6 +706,16 @@ nav a {
     background-color: #F5F5F6;
     padding: 15px 15px;
     border-radius: 30px;
+  }
+  #Carousel .slider {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #Carousel .slider .slide {
+    flex-direction: column-reverse;
+  }
+  #Carousel .slider .slide .banner-text .banner-header {
+    color: red;
   }
   .footer-menu {
     display: none;
